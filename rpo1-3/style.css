@@ -1,6 +1,16 @@
 body{
     background-color: rgb(255, 255, 255);
     color: #000000;
+    padding-top: 1px;
+}
+nav{
+    position: fixed;
+    z-index: 2;
+    background-color: #787b7a;
+    width: 100%;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    margin: 0;
 }
  .column p{
     width: 48%;
@@ -44,4 +54,37 @@ footer{
 #circle4{
     bottom: 0;
     left: 0;
+}
+#pos_Rel-Abs{
+    position: relative;
+    background-color: aqua;
+    width: 70%;
+    height:250px;
+    margin-left: auto;
+    margin-right: auto;
+}
+#pos_Rel-Abs p{
+    position: absolute;
+    background-color: blueviolet;
+    color: white;
+    height: 25px;
+    width:  25px;
+    text-align: center;
+    /* border-radius: 15px; */
+}
+#pos_Rel-Abs p:first-child{
+    top: 0;
+    left: 5%;
+}
+#pos_Rel-Abs p:last-child{
+    bottom: 0;
+    right: 5%;
+}
+#pos_Rel-Abs p:nth-child(2){
+    top: 0;
+    right: 5%;
+}
+#pos_Rel-Abs p:nth-child(3){
+    bottom: 0;
+    left: 5%;
 }
